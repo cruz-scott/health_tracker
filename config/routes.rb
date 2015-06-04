@@ -2,19 +2,7 @@ Rails.application.routes.draw do
   root "calories#main"
 
   resources :calories
-  get 'steps' => 'steps#index'
-
-  get 'steps/show'
-
-  get 'steps/new'
-
-  get 'steps/edit'
-
-  get 'steps/create'
-
-  get 'steps/update'
-
-  get 'steps/destroy'
+  resources :steps
 
   resources :exercises
   resources :weights
