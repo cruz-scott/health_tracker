@@ -21,6 +21,10 @@ class CaloriesController < ApplicationController
   def edit
   end
 
+  def main
+
+  end
+
   # POST /calories
   # POST /calories.json
   def create
