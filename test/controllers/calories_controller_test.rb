@@ -17,7 +17,7 @@ class CaloriesControllerTest < ActionController::TestCase
   end
 
   test "should create calory" do
-    assert_difference('Calorie.count') do
+    assert_difference('Calory.count') do
       post :create, calory: { value: @calory.value }
     end
 
@@ -40,7 +40,7 @@ class CaloriesControllerTest < ActionController::TestCase
   end
 
   test "should destroy calory" do
-    assert_difference('Calorie.count', -1) do
+    assert_difference('Calory.count', -1) do
       delete :destroy, id: @calory
     end
 

@@ -4,7 +4,7 @@ class CaloriesController < ApplicationController
   # GET /calories
   # GET /calories.json
   def index
-    @calories = Calorie.all
+    @calories = Calory.all
   end
 
   # GET /calories/1
@@ -14,7 +14,7 @@ class CaloriesController < ApplicationController
 
   # GET /calories/new
   def new
-    @calory = Calorie.new
+    @calory = Calory.new
   end
 
   # GET /calories/1/edit
@@ -24,11 +24,11 @@ class CaloriesController < ApplicationController
   # POST /calories
   # POST /calories.json
   def create
-    @calory = Calorie.new(calory_params)
+    @calory = Calory.new(calory_params)
 
     respond_to do |format|
       if @calory.save
-        format.html { redirect_to @calory, notice: 'Calorie was successfully created.' }
+        format.html { redirect_to @calory, notice: 'Calory was successfully created.' }
         format.json { render :show, status: :created, location: @calory }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CaloriesController < ApplicationController
   def update
     respond_to do |format|
       if @calory.update(calory_params)
-        format.html { redirect_to @calory, notice: 'Calorie was successfully updated.' }
+        format.html { redirect_to @calory, notice: 'Calory was successfully updated.' }
         format.json { render :show, status: :ok, location: @calory }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CaloriesController < ApplicationController
   def destroy
     @calory.destroy
     respond_to do |format|
-      format.html { redirect_to calories_url, notice: 'Calorie was successfully destroyed.' }
+      format.html { redirect_to calories_url, notice: 'Calory was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -64,7 +64,7 @@ class CaloriesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_calory
-      @calory = Calorie.find(params[:id])
+      @calory = Calory.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

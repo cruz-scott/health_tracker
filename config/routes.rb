@@ -1,6 +1,21 @@
 Rails.application.routes.draw do
-  resources :exercises
+
   resources :calories
+  get 'steps' => 'steps#index'
+
+  get 'steps/show'
+
+  get 'steps/new'
+
+  get 'steps/edit'
+
+  get 'steps/create'
+
+  get 'steps/update'
+
+  get 'steps/destroy'
+
+  resources :exercises
   resources :weights
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
