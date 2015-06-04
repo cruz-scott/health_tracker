@@ -14,6 +14,7 @@ class ExercisesController < ApplicationController
 
   # GET /exercises/new
   def new
+    @exercise_types = ExerciseType.all.map{|obj| obj.name}
     @exercise = Exercise.new
   end
 
