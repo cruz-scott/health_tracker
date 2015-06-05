@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "calories#main"
+  root "pages#index"
 
   resources :calories
   resources :steps
