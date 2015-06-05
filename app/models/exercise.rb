@@ -12,9 +12,13 @@ class Exercise < ActiveRecord::Base
   end
 
   def self.most_popular
-    id_hash = Exercise.group(:exercise_type_id).count
-    id = id_hash.max_by{ |k,v| v }[0]
-    ExerciseType.find(id).name
+    if Exercise.count == 0
+      "No Exercises Completed"
+    else
+      id_hash = Exercise.group(:exercise_type_id).count
+      id = id_hash.max_by{ |k,v| v }[0]
+      ExerciseType.find(id).name
+    end
   end
 
 end
