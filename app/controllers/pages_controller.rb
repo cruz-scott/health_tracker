@@ -5,6 +5,7 @@ class PagesController < ApplicationController
     @Exercises = Exercise.all
     @calories_ate = Calory.calories_today
     @calories_burned = Exercise.calories_burned_today
+    @most_popular = Exercise.most_popular
   end
 
 end

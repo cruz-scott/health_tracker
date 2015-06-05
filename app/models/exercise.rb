@@ -10,4 +10,11 @@ class Exercise < ActiveRecord::Base
       calories_today.reduce(:+)
     end
   end
+
+  def self.most_popular
+    id_hash = Exercise.group(:exercise_type_id).count
+    id = id_hash.max_by{ |k,v| v }[0]
+    ExerciseType.find(id).name
+  end
+
 end
