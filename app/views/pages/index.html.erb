@@ -6,9 +6,9 @@
   <% net_cal = net_cal.to_f %>
   You have
   <% if net_cal > 0 %>
-    gained <%= (net_cal/3500).round(2) %> pounds
+    gained <%= (net_cal/3500).round(2) %> pounds so far
   <% elsif net_cal < 0 %>
-    lost <%= (-net_cal/3500).round(2) %> pounds
+    lost <%= (-net_cal/3500).round(2) %> pounds so far
   <% else %>
     accomplished nothing
   <% end %>
