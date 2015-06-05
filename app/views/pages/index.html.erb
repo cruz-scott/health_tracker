@@ -1,6 +1,6 @@
 <h1> Testing Root </h1>
 
-<h1>Net Calories: <%= Exercise.calories_burned_today - Calory.calories_today %></h1> 
+<h1>Net Calories: <%= @calories_consumed - @calories_burned %></h1> 
 
 <%= link_to 'Exercises', exercises_path %>
 <%= link_to 'Steps', steps_path %>
