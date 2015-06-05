@@ -1,7 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  id: 1
+  name: "Run"
 
 two:
-  name: MyString
+  id: 2
+  name: "Swim"
+
+three:
+  id: 3
+  name: "Lift Weights"
+
+four:
+  id: 4
+  name: "Yoga...? (Is that even exercise?)"
+
+five:
+  id: 5
+  name: "Basketball"
