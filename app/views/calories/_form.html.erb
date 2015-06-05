@@ -1,10 +1,10 @@
-<%= form_for(@step) do |f| %>
-  <% if @step.errors.any? %>
+<%= form_for(@calory) do |f| %>
+  <% if @calory.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@step.errors.count, "error") %> prohibited this step entry from being saved:</h2>
+      <h2><%= pluralize(@calory.errors.count, "error") %> prohibited this calory entry from being saved:</h2>
 
       <ul>
-      <% @step.errors.full_messages.each do |message| %>
+      <% @calory.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
