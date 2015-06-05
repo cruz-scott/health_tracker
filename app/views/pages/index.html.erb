@@ -1,6 +1,18 @@
 <h1> Testing Root </h1>
 
-<h1>Net Calories: <%= @calories_consumed - @calories_burned %></h1> 
+<h1>Net Calories: <%= net_cal = @calories_ate - @calories_burned %></h1>
+
+<h1>
+  <% net_cal = net_cal.to_f %>
+  You have
+  <% if net_cal > 0 %>
+    gained <%= (net_cal/3500).round(2) %> pounds
+  <% elsif net_cal < 0 %>
+    lost <%= (-net_cal/3500).round(2) %> pounds
+  <% else %>
+    accomplished nothing
+  <% end %>
+</h1>
 
 <%= link_to 'Exercises', exercises_path %>
 <%= link_to 'Steps', steps_path %>

@@ -13,6 +13,7 @@ class StepsController < ApplicationController
     @step = Step.new
   end
 
+  # GET /weights/1/edit
   def edit
   end
 
