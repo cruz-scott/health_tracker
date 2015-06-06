@@ -7,7 +7,7 @@ class Exercise < ActiveRecord::Base
     else
       calories_today = Exercise.order(:calories_burned).map {|c| c.calories_burned if c.created_at.day == Time.now.day}
       calories_today.reject! {|c| c == nil}
-      calories_today.reduce(:+)
+      calories_today.add
     end
   end
 
