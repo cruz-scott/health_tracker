@@ -10,16 +10,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem 'sdoc', '~> 0.4.0', group: :doc
-<<<<<<< HEAD
 
-gem 'foreigner'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-=======
->>>>>>> 2c2936a39c9418d4c08f1375dfd4923955d98dc0
+
 gem 'puma'
 group :production do
   gem 'rails_12factor'
