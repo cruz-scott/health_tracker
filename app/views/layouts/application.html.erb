@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <% #logo %>
+<link rel="icon" href="https://avatars1.githubusercontent.com/u/8742021?v=3&amp;s=400">
+
+
+
   <title>HealthTracker</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-<%= link_to 'Home', root_path %>
-<%= yield %>
+<%= render 'layouts/header' %>
 
+<body>
+    <div class="jumbotron black" style="padding-top:20px;border-radius: 25px;">
+      <center>
+        <%= yield %>
+      </center>
+    </div>
 </body>
+
+<%= render 'layouts/footer' %>
+
 </html>

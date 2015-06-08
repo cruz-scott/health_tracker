@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Playball);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Nosifer);
+
+body {
+	padding:60px 10% 0px;
+}
+
+$body-bg: black;
+
+$jumbotron-bg:              #ecf0f1;
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+
+
+.center {
+	text-align: center;
+  vertical-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+.navbar-nav li a {
+  line-height: 16px;
+  height: 18px;
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+.navbar {
+	min-height:16px;
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color: white
+}
+
+.home:hover, .home:active {
+	background-color: #353334;
+}
+
+.btn-primary.about {
+	background-color: #CE0101;
+}
+
+.btn-primary.about {
+	font-size: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+}
+
+p.ex {color: #026411;}
+a.one:link {color:white;text-decoration:none; padding: 0px;}
+a.one:visited {color:white;text-decoration:none;}
+a.one:hover {color:silver;text-decoration:none;}
+a.one {font-family: 'Nosifer';font-size:48px;}
+p.link {text-align: center;}
+
+#left {
+  border-radius:15px;
+  display:inline-block;
+  background:#ecf0f1;
+  max-width:40%;
+  height:150px;
+  line-height:30px;
+  margin:20px 0px 20px;
+  padding:30px 0px;
+  vertical-align:middle;
+}
+
+#right {
+  border-radius:15px;
+  display:inline-block;
+  background:#ecf0f1;
+  max-width:40%;
+  height:150px;
+  line-height:30px;
+  margin:0px;
+  padding:30px 0px;
+  vertical-align:middle;
+  margin-left:10%;
+}
+
+#center {
+  border-radius:15px;
+  display:inline-block;
+  background:#ecf0f1;
+  max-width:40%;
+  height:150px;
+  line-height:30px;
+  margin:0px;
+  padding:30px 0px;
+  vertical-align:middle;
+}
