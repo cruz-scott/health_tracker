@@ -4,9 +4,9 @@ class Calory < ActiveRecord::Base
     if Calory.count == 0
       0
     else
-      calories_today = Calory.order(:value).map {|c| c.value if c.created_at.day == Time.now.day}
-      calories_today.reject! {|c| c == nil}
-      calories_today.reduce(:+)
+      # puts "Time.now: #{Time.now.strftime("%D")}"
+      # Calory.all.each {|obj| print obj.value; puts obj.created_at.strftime("%D") }
+      Calory.all.reduce(0) {|sum, obj| obj.created_at.strftime("%D") == Time.now.strftime("%D") ? sum + obj.value : sum }
     end
   end
 
