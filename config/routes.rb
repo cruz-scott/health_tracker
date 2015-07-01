@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  root "pages#index"
 
+  get 'graph/index'
+  get 'graph/data', :defaults => { :format => 'json' }
+  
+  root "pages#root"
+
+  get 'pages/root'
   resources :calories
   resources :steps
   resources :exercises

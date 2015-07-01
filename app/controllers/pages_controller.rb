@@ -8,4 +8,8 @@ class PagesController < ApplicationController
     @most_popular = Exercise.most_popular
   end
 
+  def root
+
+  end
+
 end
